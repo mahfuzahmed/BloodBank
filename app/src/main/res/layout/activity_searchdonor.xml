@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Searchdonor">
+
+    <TextView
+        android:id="@+id/loctxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setloc"
+        android:layout_alignTop="@+id/bgtxt2"
+        android:text="Select Location"
+        android:textColorHint="@android:color/black"
+        tools:textSize="10sp"
+        android:layout_alignLeft="@+id/setloc" />
+
+    <TextView
+        android:id="@+id/bgtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/setbg"
+        android:layout_marginTop="130dp"
+        android:text="Select Blood Group"
+        android:textColorHint="@android:color/black"
+        tools:textSize="10sp" />
+
+    <Spinner
+        android:id="@+id/setbg"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="165dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/setloc"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/setbg"
+        android:layout_marginEnd="30dp"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/finddonor"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:text="FIND DONOR" />
+
+</RelativeLayout>
